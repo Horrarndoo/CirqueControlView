@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:focusable="true"
+             android:focusableInTouchMode="true"
+             android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="circle 1:"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"/>
+
+        <com.zyw.horrarndoo.cirqueControlView.CirqueProgressControlView
+            android:id="@+id/ccv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            app:max_progress="100"
+            app:min_progress="0"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_margin="20dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="circle 2:"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"/>
+
+        <com.zyw.horrarndoo.cirqueControlView.CirqueProgressControlViewNew
+            android:id="@+id/cv"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="bottom|center_horizontal"/>
+    </LinearLayout>
+</FrameLayout>

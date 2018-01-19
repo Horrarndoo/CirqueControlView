@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CirqueView">
+        <attr name="min_progress" format="integer">0</attr>
+        <attr name="max_progress" format="integer">100</attr>
+        <attr name="is_anim" format="boolean">true</attr>
+    </declare-styleable>
+</resources>
